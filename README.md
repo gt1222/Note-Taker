@@ -22,6 +22,15 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 2. npm install express and uuid
 
 ## Usage
+Users would be able to type in notes and save the notes onto the left hand side. I just haven't been able to solve the issue of clicking on existing notes to appear on the right and to delete notes.
 
+![Get started to take notes](Instructions/Assets/note1.png)
+
+![Adding my notes title and text](Instructions/Assets/note2.png)
+
+![Saved notes so test3 is on the left hand side](Instructions/Assets/note3.png)
 
 ## Deployed Site
+[Heroku](https://gia-note-taker.herokuapp.com)
+
+[Github](https://github.com/gt1222/Note-Taker)
