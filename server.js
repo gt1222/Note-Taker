@@ -3,8 +3,9 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
-const api = require('./routes/apiRoutes');
-const { redAndAppend, readFromFile } = require('./helpers/fsUtils');
+const api = require('./routes/index');
+const html = require('./routes/index');
+const { readAndAppend, readFromFile } = require('./helpers/fsUtils');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -16,6 +17,7 @@ app.use(express.static('public'));
 
 // Routes
 app.use('/api', api);
+app.use('/', html);
 
 // GET /notes notes.html
 app.get('/notes', (req, res) =>
